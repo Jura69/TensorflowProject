@@ -14,7 +14,7 @@ def extract_features(image):
     return feature/255.0
 
 cap = cv2.VideoCapture(0)
-label = ['A', 'M', 'N', 'S', 'T', 'blank']
+label = ['A', 'B', 'K', 'S', 'U', 'V','W', 'blank']
 while True:
     _,frame = cap.read()
     cv2.rectangle(frame,(0,40),(300,300),(0, 165, 255),1)
